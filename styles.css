@@ -30,13 +30,27 @@ body {
 }
 
 h1 {
-    font-size: clamp(2.5rem, 6vw, 5rem);
     font-weight: 400;
     color: #2a2a2a;
-    line-height: 1.15;
     letter-spacing: -0.02em;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+/* Desktop/Laptop: large text with line breaks */
+@media (min-width: 992px) {
+    h1 {
+        font-size: 4rem;
+        line-height: 1.15;
+    }
+}
+
+/* Mobile/Tablet: smaller text, no line breaks */
+@media (max-width: 991px) {
+    h1 {
+        font-size: 1.75rem;
+        line-height: 1.4;
+    }
 }
 
 .tagline {
