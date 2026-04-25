@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Contact - BharatSensing</title>
+<meta name="description" content="Get in touch with BharatSensing for site assessments, partnerships, or investor conversations." />
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><circle cx='12' cy='12' r='10' fill='none' stroke='%23FF7A00' stroke-width='2'/><circle cx='12' cy='12' r='2' fill='%23FF7A00'/></svg>" />
+</head>
+<body>
+
+<header class="nav nav-dark">
+ <div class="nav-inner">
+ <a class="nav-logo" href="index.html"><svg class="chakra" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+ <defs><linearGradient id="bs-nav-sweep" x1="50%" y1="0%" x2="100%" y2="50%"><stop offset="0%" stop-color="#FF7A00" stop-opacity="0"/><stop offset="100%" stop-color="#FF7A00" stop-opacity="0.65"/></linearGradient></defs>
+ <circle cx="32" cy="32" r="27" stroke="#FF7A00" stroke-width="2.4"/>
+ <circle cx="32" cy="32" r="15" stroke="#FF7A00" stroke-width="1.2" stroke-opacity="0.45"/>
+ <path d="M32 32 L32 5 A27 27 0 0 1 59 32 Z" fill="url(#bs-nav-sweep)"/>
+ <line x1="32" y1="32" x2="32" y2="5" stroke="#FF7A00" stroke-width="2"/>
+ <line x1="32" y1="32" x2="59" y2="32" stroke="#FF7A00" stroke-width="2" stroke-opacity="0.55"/>
+ <circle cx="32" cy="32" r="3.6" fill="#FF7A00"/>
+ </svg>BharatSensing</a>
+ <nav class="nav-menu">
+ <a href="index.html">Home</a><a href="product.html">Product</a>
+ <a href="mining.html">Mining</a><a href="dams.html">Dams</a><a href="bridges.html">Bridges</a>
+ <a href="about.html">About</a><a href="careers.html">Careers</a>
+ <a href="contact.html" class="active">Contact</a>
+ </nav>
+ <div class="nav-cta">
+ <a href="contact.html" class="btn btn-primary">Request a briefing</a>
+ <button class="nav-toggle"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg></button>
+ </div>
+ </div>
+</header>
+
+<section class="page-hero">
+ <div class="hero-bg"><div class="hero-grid"></div><div class="hero-glow"></div></div>
+ <div class="container">
+ <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Contact</span></div>
+ <span class="eyebrow">Let's Build Together</span>
+ <h1 class="display-xl mt-24">Tell us about<br/>your <span style="color:var(--saffron)">asset.</span></h1>
+ <p class="lede">Whether it's a mine slope, an ageing dam, a strategic bridge corridor, a defence
+ requirement, or an investor thesis - we'd love to hear from you.</p>
+ </div>
+</section>
+
+<section class="section">
+ <div class="container grid grid-2" style="gap:56px">
+ <div class="reveal">
+ <h2 class="display-md">Send us a note.</h2>
+ <p class="lede mt-16">We respond within one business day. Briefings typically happen within the
+ fortnight.</p>
+
+ <form class="mt-32" onsubmit="return handleContact(event)">
+ <div class="form-grid">
+ <div class="field"><label for="name">Your name</label><input id="name" name="name" type="text" required placeholder="Jane Doe"></div>
+ <div class="field"><label for="org">Organisation</label><input id="org" name="org" type="text" required placeholder="Coal India / NHAI / NHPC / …"></div>
+ <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required placeholder="you@organisation.in"></div>
+ <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" placeholder="+91 …"></div>
+ </div>
+ <div class="field"><label for="topic">I'm reaching out about</label>
+ <select id="topic" name="topic" required>
+ <option value="">Please choose…</option>
+ <option>Mining - slope stability</option>
+ <option>Dam - structural monitoring</option>
+ <option>Bridge - SHMS</option>
+ <option>Defence / MoD</option>
+ <option>Investment / Partnership</option>
+ <option>Media</option>
+ <option>General</option>
+ </select>
+ </div>
+ <div class="field"><label for="msg">Tell us about your asset or question</label>
+ <textarea id="msg" name="msg" required placeholder="Asset name, location, timeline, and anything else useful."></textarea>
+ </div>
+ <button type="submit" class="btn btn-primary">Send message</button>
+ <p id="formOk" class="mono small mt-16" style="color:var(--india-green);display:none">Thank you. Your message has been sent.</p>
+ </form>
+ </div>
+
+ <aside class="reveal">
+ <div style="position:sticky;top:100px">
+ <div class="card" style="padding:32px">
+ <div class="mono small" style="color:var(--saffron)">GET IN TOUCH</div>
+ <h3 class="mt-16" style="font-size:24px">Founder's line</h3>
+ <p class="mt-8">The fastest path is a direct note to Siddhant, our CEO. He personally handles
+ first conversations across customers, partners and investors.</p>
+ <p class="mt-24 mono" style="color:var(--ink);font-weight:500">
+ <a href="mailto:info@bharatsensing.com" style="color:var(--saffron-600)">info@bharatsensing.com</a></p>
+ </div>
+
+ <div class="card mt-24" style="padding:32px">
+ <div class="mono small" style="color:var(--saffron)">HEADQUARTERS</div>
+ <h3 class="mt-16" style="font-size:24px">BharatSensing Technologies Pvt. Ltd.</h3>
+ <p class="mt-8">Registered office &amp; engineering centre - India.<br/>
+ Field mobilisation teams deployable across India's mining and infrastructure corridors.</p>
+ </div>
+
+
+ </aside>
+ </div>
+</section>
+
+<div class="tricolor"><span></span><span></span><span></span></div>
+<footer>
+ <div class="container">
+ <div class="footer-grid">
+ <div class="footer-brand"><h3>BharatSensing</h3><p>India's first indigenous ground radar manufacturer. Making India's infrastructure visible, predictive and sovereign.</p><p class="mono small mt-24" style="color:var(--fg-on-dark-muted)">info@bharatsensing.com</p></div>
+ <div class="footer-col"><h5>Product</h5><a href="product.html">SuryaGbSAR</a><a href="product.html#specs">Specifications</a><a href="product.html#compare">Vs. imports</a><a href="product.html#maas">Monitoring-as-a-Service</a></div>
+ <div class="footer-col"><h5>Industries</h5><a href="mining.html">Mining</a><a href="dams.html">Dams &amp; Reservoirs</a><a href="bridges.html">Bridges &amp; Highways</a></div>
+ <div class="footer-col"><h5>Company</h5><a href="about.html">About</a><a href="about.html#team">Team</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a></div>
+ </div>
+ <div class="footer-bottom"><span>© <span id="year">2026</span> BharatSensing Technologies Pvt. Ltd. · CIN pending</span><span class="mono">Building India's Eyes · Protecting India's Future</span></div>
+ </div>
+</footer>
+
+<script src="app.js"></script>
+<script>
+async function handleContact(e) {
+  e.preventDefault();
+  
+  const f = e.target;
+  const submitBtn = f.querySelector('button[type="submit"]');
+  const successMsg = document.getElementById('formOk');
+  
+  // 1. Disable button to prevent double-clicks
+  if(submitBtn) {
+    submitBtn.disabled = true;
+    submitBtn.innerText = "Sending...";
+  }
+
+  // 2. Prepare data
+  const formData = new FormData(f);
+  const scriptURL = "https://script.google.com/macros/s/AKfycbw3c9Ut74YFKOV-KOQkGrfw_JFkKg6xv2rbbgPExxaHCbuber0XCDd6IS8CdQ0Ixk7g/exec"
+  try {
+    // 3. Post to Google Apps Script
+    const response = await fetch(scriptURL, { 
+      method: 'POST', 
+      body: formData 
+    });
+
+    if (response.ok) {
+      // 4. Update UI
+      successMsg.style.display = 'block';
+      f.reset(); // Clear the form
+      if(submitBtn) submitBtn.style.display = 'none';
+    } else {
+      throw new Error('Network response was not ok.');
+    }
+  } catch (error) {
+    console.error('Submission error:', error);
+    alert("There was an error sending your message. Please try again or email us directly.");
+    if(submitBtn) {
+      submitBtn.disabled = false;
+      submitBtn.innerText = "Send Message";
+    }
+  }
+
+  return false;
+}
+</script>
+</body></html>

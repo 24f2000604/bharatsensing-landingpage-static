@@ -1,29 +1,357 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BharatSensing</title>
-    <link rel="icon" type="image/png" href="icons/sharingan.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>BharatSensing - India's First Indigenous Ground Radar Manufacturer</title>
+<meta name="description" content="SuryaGbSAR makes India's critical infrastructure visible, predictive, and sovereign. Real-time, sub-millimeter radar monitoring for mines, dams, and bridges." />
+<meta name="theme-color" content="#0A0F1C" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><circle cx='12' cy='12' r='10' fill='none' stroke='%23FF7A00' stroke-width='2'/><circle cx='12' cy='12' r='2' fill='%23FF7A00'/></svg>" />
 </head>
 <body>
-    <main class="hero">
-        <div class="hero-content">
-            <div class="headline-box">
-                <h1>
-                    <span class="d-none d-lg-block">Always-On Radar Monitoring<br>for<br>High-Risk, High-Value Infrastructure</span>
-                    <span class="d-lg-none">Always-On Radar Monitoring<br>for<br>High-Risk, High-Value Infrastructure</span>
-                </h1>
-            </div>
-            <p class="tagline">
-                Contact us: info@bharatsensing.com<br>
-            </p>
-        </div>
-    </main>
+
+<!-- NAV -->
+<header class="nav nav-dark">
+ <div class="nav-inner">
+ <a class="nav-logo" href="index.html" aria-label="BharatSensing home">
+ <svg class="chakra" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+ <defs><linearGradient id="bs-nav-sweep" x1="50%" y1="0%" x2="100%" y2="50%"><stop offset="0%" stop-color="#FF7A00" stop-opacity="0"/><stop offset="100%" stop-color="#FF7A00" stop-opacity="0.65"/></linearGradient></defs>
+ <circle cx="32" cy="32" r="27" stroke="#FF7A00" stroke-width="2.4"/>
+ <circle cx="32" cy="32" r="15" stroke="#FF7A00" stroke-width="1.2" stroke-opacity="0.45"/>
+ <path d="M32 32 L32 5 A27 27 0 0 1 59 32 Z" fill="url(#bs-nav-sweep)"/>
+ <line x1="32" y1="32" x2="32" y2="5" stroke="#FF7A00" stroke-width="2"/>
+ <line x1="32" y1="32" x2="59" y2="32" stroke="#FF7A00" stroke-width="2" stroke-opacity="0.55"/>
+ <circle cx="32" cy="32" r="3.6" fill="#FF7A00"/>
+ </svg>
+ BharatSensing
+ </a>
+ <nav class="nav-menu" aria-label="Primary">
+ <a href="index.html" class="active">Home</a>
+ <a href="product.html">Product</a>
+ <a href="mining.html">Mining</a>
+ <a href="dams.html">Dams</a>
+ <a href="bridges.html">Bridges</a>
+ <a href="about.html">About</a>
+ <a href="careers.html">Careers</a>
+ <a href="contact.html">Contact</a>
+ </nav>
+ <div class="nav-cta">
+ <a href="contact.html" class="btn btn-primary">Request a briefing</a>
+ <button class="nav-toggle" aria-label="Toggle menu">
+ <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+ </button>
+ </div>
+ </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+ <div class="hero-bg" aria-hidden="true">
+ <div class="hero-grid"></div>
+ <div class="hero-glow"></div>
+ <div class="hero-glow-2"></div>
+ </div>
+ <div class="container hero-content">
+ <div>
+ <span class="eyebrow">India's First Indigenous Ground Radar Manufacturer</span>
+ <h1 class="display-xl mt-24">
+ Building India's<br/>
+ <span class="saffron">eyes.</span> Protecting<br/>
+ India's <span class="accent-underline">future.</span>
+ </h1>
+ <p class="hero-lede">
+ SuryaGbSAR is a made-in-India, 24×7, all-weather ground radar that detects
+ sub-millimeter movement across mines, dams and bridges - giving you days,
+ often weeks of warning before failure.
+ </p>
+ <div class="hero-cta">
+ <a href="product.html" class="btn btn-primary">Explore SuryaGbSAR</a>
+ <a href="contact.html" class="btn btn-outline">Book a site assessment</a>
+ </div>
+ <div class="hero-badges" aria-label="Credentials">
+ <span class="hero-badge"><span class="dot"></span>Make in India</span>
+ <span class="hero-badge">DGMS-aligned</span>
+ <span class="hero-badge">DRIP-ready</span>
+ <span class="hero-badge">MoRTH-compliant</span>
+ </div>
+ </div>
+ <div class="chakra-radar" aria-hidden="true">
+ <svg viewBox="-250 -250 500 500">
+ <defs>
+ <linearGradient id="sweep" x1="0" x2="1" y1="0" y2="0">
+ <stop offset="0" stop-color="#FF7A00" stop-opacity="0"/>
+ <stop offset="1" stop-color="#FF7A00" stop-opacity="0.65"/>
+ </linearGradient>
+ <radialGradient id="grain" cx="50%" cy="50%" r="50%">
+ <stop offset="0" stop-color="#FF7A00" stop-opacity="0.04"/>
+ <stop offset="1" stop-color="#FF7A00" stop-opacity="0"/>
+ </radialGradient>
+ </defs>
+ <!-- atmospheric core glow -->
+ <circle r="220" fill="url(#grain)"/>
+ <!-- concentric rings only (no spokes) -->
+ <circle class="ring" r="220"/>
+ <circle class="ring" r="170"/>
+ <circle class="ring ring-accent" r="120"/>
+ <circle class="ring" r="70"/>
+ <!-- range tick marks at 12, 3, 6, 9 only -->
+ <g stroke="rgba(255,255,255,0.35)" stroke-width="1">
+ <line x1="0" y1="-225" x2="0" y2="-215"/>
+ <line x1="225" y1="0" x2="215" y2="0"/>
+ <line x1="0" y1="225" x2="0" y2="215"/>
+ <line x1="-225" y1="0" x2="-215" y2="0"/>
+ </g>
+ <!-- pulse ring -->
+ <circle class="chakra-pulse" r="60" fill="none" stroke="#FF7A00" stroke-width="1"/>
+ <!-- rotating sweep cone -->
+ <g class="chakra-sweep-inplace">
+ <path d="M0,0 L220,0 A220,220 0 0 0 155,-155 Z" fill="url(#sweep)"/>
+ <line x1="0" y1="0" x2="220" y2="0" stroke="#FF7A00" stroke-width="1.5"/>
+ </g>
+ <!-- detection targets (movement points) -->
+ <circle cx="95" cy="-60" r="3.5" fill="#FF7A00"/>
+ <circle cx="-120" cy="40" r="2.5" fill="#0E6B3A"/>
+ <circle cx="40" cy="150" r="2.5" fill="#0E6B3A"/>
+ <circle cx="-80" cy="-140" r="2.5" fill="#0E6B3A"/>
+ <circle cx="170" cy="80" r="2" fill="#0E6B3A"/>
+ <circle cx="-160" cy="-50" r="2" fill="#0E6B3A"/>
+ <!-- core -->
+ <circle class="core-halo" r="38"/>
+ <circle class="core" r="10"/>
+ <!-- labels -->
+ <text class="label" x="0" y="-232" text-anchor="middle">N</text>
+ <text class="label" x="232" y="4" text-anchor="start">E</text>
+ <text class="label" x="0" y="244" text-anchor="middle">S</text>
+ <text class="label" x="-232" y="4" text-anchor="end">W</text>
+ <text class="label" x="130" y="-215">24×7 · ALL-WEATHER</text>
+ <text class="label" x="-230" y="-215">SURYA-GbSAR</text>
+ </svg>
+ </div>
+ </div>
+</section>
+
+<!-- THE SOLUTION / PRODUCT -->
+<section class="section section-cream" id="solution">
+ <div class="container">
+ <div class="section-header reveal">
+ <span class="eyebrow">The Product · SuryaGbSAR</span>
+ <h2 class="display-lg">See failures <em style="font-style:normal;color:var(--saffron)">before</em> they happen.</h2>
+ <p class="lede">
+ SuryaGbSAR is a ground-based synthetic aperture radar that continuously scans critical
+ assets - mines, dams, bridges - at sub-millimeter precision, day and night, in all
+ weather, with the reliability and cost structure only possible when it's built in India.
+ </p>
+ </div>
+
+ <div class="grid grid-3 reveal">
+ <article class="card">
+ <div class="card-icon">
+ <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></svg>
+ </div>
+ <h3>Millimeter precision, kilometers of reach</h3>
+ <p>Detects deformation as small as 0.1 mm over ranges up to 4 km - enough to catch the
+ earliest tremor of a slope, crack, or arch long before the naked eye can see it.</p>
+ </article>
+ <article class="card">
+ <div class="card-icon">
+ <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a9 9 0 1 1-9-9"/><path d="M21 3v6h-6"/></svg>
+ </div>
+ <h3>24×7, day-night, all-weather</h3>
+ <p>Unlike LiDAR, optical or manual surveys, radar cuts through dust, haze, fog, rain and
+ darkness. No downtime - no monsoon blind spots, no night-shift blackouts.</p>
+ </article>
+ <article class="card">
+ <div class="card-icon">
+ <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3h18v14H3z"/><path d="M8 21h8M12 17v4"/><path d="M7 10l3 3 7-7"/></svg>
+ </div>
+ <h3>50% lower cost, 3× faster scale</h3>
+ <p>Made in India means nationwide deployment, not expensive pilots - with the same
+ data fidelity as imported systems at a fraction of the lifecycle cost.</p>
+ </article>
+ <article class="card">
+ <div class="card-icon">
+ <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6z"/></svg>
+ </div>
+ <h3>Sovereign & secure by design</h3>
+ <p>All data stays in India. No foreign telemetry, no export-controlled components,
+ no vendor-locked cloud. Designed to be auditable by national agencies.</p>
+ </article>
+ <article class="card">
+ <div class="card-icon">
+ <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v6H4zM4 14h16v6H4z"/><path d="M8 7h.01M8 17h.01"/></svg>
+ </div>
+ <h3>Predictive, not reactive</h3>
+ <p>ML models trained on Indian terrain convert raw movement into risk scores, automated
+ alerts, and evacuation leads - days to weeks before a failure event.</p>
+ </article>
+ <article class="card">
+ <div class="card-icon">
+ <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V8l8-6 8 6v12"/><path d="M9 20v-6h6v6"/></svg>
+ </div>
+ <h3>Built for Indian conditions</h3>
+ <p>Engineered for 50°C heat, dust storms, monsoon floods, patchy grid power, and
+ long logistics cycles. Field-serviceable with parts made on-shore.</p>
+ </article>
+ </div>
+
+ </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="section">
+ <div class="container">
+ <div class="section-header reveal">
+ <span class="eyebrow">Industries</span>
+ <h2 class="display-lg">One radar.<br/>National-scale impact.</h2>
+ <p class="lede">
+ The same SuryaGbSAR platform - productised for three of India's most critical,
+ most under-monitored infrastructure categories.
+ </p>
+ </div>
+
+ <div class="grid grid-3 reveal">
+ <a href="mining.html" class="industry-card">
+ <div class="bg" style="background:
+ radial-gradient(circle at 30% 20%, rgba(255,122,0,0.45), transparent 55%),
+ linear-gradient(160deg,#1A1108 0%,#3B1D08 60%,#7A3511 100%);"></div>
+ <div class="body">
+ <span class="tag">Mining</span>
+ <div>
+ <h3>Slope Stability Radar for open-cast mines</h3>
+ <p>DGMS-mandated monitoring across India's open-cast operations - coal, iron, limestone. MCL, SECL, SCCL, Adani.</p>
+ <div style="display:flex;justify-content:flex-end;align-items:flex-end">
+ <span class="arrow">→</span>
+ </div>
+ </div>
+ </div>
+ </a>
+ <a href="dams.html" class="industry-card">
+ <div class="bg" style="background:
+ radial-gradient(circle at 70% 20%, rgba(14,107,58,0.45), transparent 55%),
+ linear-gradient(160deg,#071A14 0%,#0C3526 55%,#155943 100%);"></div>
+ <div class="body">
+ <span class="tag">Dams</span>
+ <div>
+ <h3>Structural monitoring for ageing dams</h3>
+ <p>DRIP-aligned monitoring for India's large-dam portfolio. NHPC, NHDC, State WRDs.</p>
+ <div style="display:flex;justify-content:flex-end;align-items:flex-end">
+ <span class="arrow">→</span>
+ </div>
+ </div>
+ </div>
+ </a>
+ <a href="bridges.html" class="industry-card">
+ <div class="bg" style="background:
+ radial-gradient(circle at 40% 20%, rgba(11,44,92,0.5), transparent 55%),
+ linear-gradient(160deg,#06112A 0%,#0E2247 60%,#1B3A7E 100%);"></div>
+ <div class="body">
+ <span class="tag">Bridges</span>
+ <div>
+ <h3>Real-time SHMS for national bridges</h3>
+ <p>MoRTH-mandated, real-time Structural Health Monitoring across India's major bridge network. NHAI + State PWDs.</p>
+ <div style="display:flex;justify-content:flex-end;align-items:flex-end">
+ <span class="arrow">→</span>
+ </div>
+ </div>
+ </div>
+ </a>
+ </div>
+ </div>
+</section>
+
+<!-- TEAM -->
+<section class="section">
+ <div class="container">
+ <div class="section-header reveal">
+ <span class="eyebrow">The Team</span>
+ <h2 class="display-lg">Technocrats who execute.</h2>
+ <p class="lede">Operators from defence, avionics, ML/AI and manufacturing - building the
+ sensing stack that India's infrastructure decade requires.</p>
+ </div>
+ <div class="team-grid reveal" style="grid-template-columns:repeat(2,1fr);max-width:760px;margin:0 auto">
+ <div class="team-card">
+ <div class="portrait"><span class="initials">SB</span><div class="tricolor"><span></span><span></span><span></span></div></div>
+ <div class="meta">
+ <div class="role">Chief Executive Officer</div>
+ <h4>Siddhant Bhomia</h4>
+ <p>Business development, customer engagement, ML &amp; data. Leading GTM across mining, dams and bridges.</p>
+ </div>
+ </div>
+ <div class="team-card">
+ <div class="portrait"><span class="initials">PS</span><div class="tricolor"><span></span><span></span><span></span></div></div>
+ <div class="meta">
+ <div class="role">Strategic Investor</div>
+ <h4>Pankaj Singh</h4>
+ <p>Ex-Air Force. Avionics, manufacturing, defence sales. Opens doors across India's defence ecosystem.</p>
+ </div>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- CTA -->
+<section class="section-tight">
+ <div class="container">
+ <div class="cta-band reveal">
+ <div class="glow" aria-hidden="true"></div>
+ <div class="row">
+ <div>
+ <span class="eyebrow">Ready when you are</span>
+ <h2 class="display-md mt-24">Bring SuryaGbSAR to<br/>your mine, dam, or bridge.</h2>
+ </div>
+ <div class="actions">
+ <a href="contact.html" class="btn btn-primary">Request a briefing</a>
+ 
+ </div>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- FOOTER -->
+<div class="tricolor"><span></span><span></span><span></span></div>
+<footer>
+ <div class="container">
+ <div class="footer-grid">
+ <div class="footer-brand">
+ <h3>BharatSensing</h3>
+ <p>India's first indigenous ground radar manufacturer. Making India's infrastructure visible, predictive and sovereign.</p>
+ <p class="mono small mt-24" style="color:var(--fg-on-dark-muted)">info@bharatsensing.com</p>
+ </div>
+ <div class="footer-col">
+ <h5>Product</h5>
+ <a href="product.html">SuryaGbSAR</a>
+ <a href="product.html#specs">Specifications</a>
+ <a href="product.html#compare">Vs. imports</a>
+ <a href="product.html#maas">Monitoring-as-a-Service</a>
+ </div>
+ <div class="footer-col">
+ <h5>Industries</h5>
+ <a href="mining.html">Mining</a>
+ <a href="dams.html">Dams &amp; Reservoirs</a>
+ <a href="bridges.html">Bridges &amp; Highways</a>
+ </div>
+ <div class="footer-col">
+ <h5>Company</h5>
+ <a href="about.html">About</a>
+ <a href="about.html#team">Team</a>
+ <a href="careers.html">Careers</a>
+ <a href="contact.html">Contact</a>
+ </div>
+ </div>
+ <div class="footer-bottom">
+ <span>© <span id="year">2026</span> BharatSensing Technologies Pvt. Ltd. · CIN pending</span>
+ <span class="mono">Building India's Eyes · Protecting India's Future</span>
+ </div>
+ </div>
+</footer>
+
+<script src="app.js"></script>
 </body>
 </html>
