@@ -522,7 +522,7 @@ const Footer = () => (
           ))}
         </div>
         <div className="border-t border-white/10 py-7 flex flex-wrap justify-between gap-5 text-[13px]">
-          <span>© {new Date().getFullYear()} BharatSensing Technologies Pvt. Ltd. · CIN pending</span>
+          <span>© {new Date().getFullYear()} BharatSensing Technologies Pvt. Ltd. </span>
           <span className="font-mono">Building India's Eyes · Protecting India's Future</span>
         </div>
       </div>
