@@ -97,7 +97,7 @@ const Nav = () => {
     ["Mining", "#industries"],
     ["Dams", "#industries"],
     ["Bridges", "#industries"],
-    ["About", "#team"],
+    ["About", "about.html"],
     ["Careers", "#careers"],
   ];
 
@@ -436,44 +436,6 @@ const Industries = () => {
   );
 };
 
-const Team = () => {
-  const people = [
-    { in: "SB", role: "Chief Executive Officer", name: "Siddhant Bhomia", blurb: "Business development, customer engagement, ML & data. Leading GTM across mining, dams and bridges." },
-    { in: "NM", role: "Chief Operating Officer", name: "Nikhil Murarka",  blurb: "Manufacturing, product, ground ops, energy. Builds the supply chain and field deployments." },
-    { in: "NS", role: "Advisor",                 name: "Naresh Soni",     blurb: "LiDAR, InSAR, HD mapping, drones. Two decades across hardware and software sensing." },
-    { in: "PS", role: "Strategic Investor",      name: "Pankaj Singh",    blurb: "Ex-Air Force. Avionics, manufacturing, defence sales. Opens doors across India's defence ecosystem." },
-  ];
-  return (
-    <section id="team" className="bg-white py-28">
-      <div className="max-w-[1200px] mx-auto px-7">
-        <div className="max-w-[780px] mb-16">
-          <Eyebrow>The Team</Eyebrow>
-          <h2 className="mt-4 font-display font-semibold tracking-[-0.03em] leading-[1.02] text-[clamp(40px,6vw,80px)]">Technocrats who execute.</h2>
-          <p className="mt-5 text-[clamp(18px,1.6vw,22px)] leading-[1.5] text-ink/65 max-w-[62ch]">
-            Operators from defence, avionics, ML/AI and manufacturing — building the sensing stack
-            that India's infrastructure decade requires.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {people.map((p) => (
-            <div key={p.name} className="rounded-[20px] overflow-hidden bg-white border border-ink/10">
-              <div className="relative aspect-[3/4] flex items-end justify-center" style={{ background: "linear-gradient(160deg,#F7F5EF,#E9E6DB)" }}>
-                <span className="absolute top-5 left-6 font-display font-semibold text-[84px] leading-none text-ink/10">{p.in}</span>
-                <Tricolor className="h-[3px] absolute inset-x-0 bottom-0" />
-              </div>
-              <div className="p-6">
-                <div className="text-saffron font-mono text-[11.5px] tracking-[0.14em] uppercase mb-1.5">{p.role}</div>
-                <h4 className="font-display font-semibold text-[19px] mb-1.5">{p.name}</h4>
-                <p className="text-[13.5px] text-ink/55 leading-relaxed">{p.blurb}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
-
 const CTA = () => (
   <section className="py-20">
     <div className="max-w-[1200px] mx-auto px-7">
@@ -511,7 +473,7 @@ const Footer = () => (
           {[
             ["Product", ["SuryaGbSAR", "Specifications", "Vs. imports", "Monitoring-as-a-Service"]],
             ["Industries", ["Mining", "Dams & Reservoirs", "Bridges & Highways"]],
-            ["Company", ["About", "Team", "Careers", "Contact"]],
+            ["Company", ["About", "Careers", "Contact"]],
           ].map(([h, items]) => (
             <div key={h}>
               <h5 className="font-mono text-[11.5px] tracking-[0.18em] uppercase text-white/55 mb-5 font-medium">{h}</h5>
@@ -541,7 +503,6 @@ export default function BharatSensing() {
       <Problem />
       <Product />
       <Industries />
-      <Team />
       <CTA />
       <Footer />
     </div>
