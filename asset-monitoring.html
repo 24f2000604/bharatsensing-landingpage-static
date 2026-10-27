@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Asset Monitoring — Field, Drone and Satellite Layers | BharatSensing</title>
+<meta name="description" content="One asset register with three independent layers of observation: field inspection with enforced live capture, drone survey of the whole site, and satellite assessment across the portfolio." />
+<link rel="canonical" href="https://bharatsensing.com/asset-monitoring.html" />
+<meta name="theme-color" content="#0A0F1C" />
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1" />
+
+<!-- Favicons: real crawlable files. A data: URI favicon is never indexed by search engines. -->
+<link rel="icon" href="favicon.ico" sizes="any" />
+<link rel="icon" type="image/svg+xml" href="assets/icon.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icon-32.png" />
+<link rel="icon" type="image/png" sizes="48x48" href="assets/icon-48.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+<link rel="manifest" href="site.webmanifest" />
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="BharatSensing" />
+<meta property="og:title" content="Asset Monitoring — Field, Drone and Satellite Layers | BharatSensing" />
+<meta property="og:description" content="One asset register with three independent layers of observation: field inspection with enforced live capture, drone survey of the whole site, and satellite assessment across the portfolio." />
+<meta property="og:url" content="https://bharatsensing.com/asset-monitoring.html" />
+<meta property="og:image" content="https://bharatsensing.com/assets/og-cover.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="en_IN" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Asset Monitoring — Field, Drone and Satellite Layers | BharatSensing" />
+<meta name="twitter:description" content="One asset register with three independent layers of observation: field inspection with enforced live capture, drone survey of the whole site, and satellite assessment across the portfolio." />
+<meta name="twitter:image" content="https://bharatsensing.com/assets/og-cover.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Organization",
+ "@id": "https://bharatsensing.com/#organization",
+ "name": "BharatSensing",
+ "legalName": "BharatSensing Technologies Pvt. Ltd.",
+ "url": "https://bharatsensing.com/",
+ "logo": {
+  "@type": "ImageObject",
+  "url": "https://bharatsensing.com/assets/logo-512.png",
+  "width": 512,
+  "height": 512
+ },
+ "image": "https://bharatsensing.com/assets/og-cover.png",
+ "description": "BharatSensing builds India's first indigenous ground-based synthetic aperture radar and delivers drone and satellite monitoring services for critical infrastructure and public assets.",
+ "email": "info@bharatsensing.com",
+ "foundingDate": "2024",
+ "address": {
+  "@type": "PostalAddress",
+  "addressCountry": "IN"
+ },
+ "areaServed": {
+  "@type": "Country",
+  "name": "India"
+ },
+ "knowsAbout": [
+  "Ground-based synthetic aperture radar",
+  "Slope stability monitoring",
+  "Structural health monitoring",
+  "Drone survey",
+  "Satellite imagery analysis",
+  "Geospatial AI"
+ ],
+ "sameAs": [
+  "https://www.linkedin.com/company/bharatsensing"
+ ]
+}
+</script>
+</head>
+<body>
+
+<header class="nav nav-dark">
+ <div class="nav-inner">
+ <a class="nav-logo" href="index.html" aria-label="BharatSensing home">
+ <svg class="chakra" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+<defs><linearGradient id="bs-nav-sweep" x1="50%" y1="0%" x2="100%" y2="50%"><stop offset="0%" stop-color="#FF7A00" stop-opacity="0"/><stop offset="100%" stop-color="#FF7A00" stop-opacity="0.65"/></linearGradient></defs>
+<circle cx="32" cy="32" r="27" stroke="#FF7A00" stroke-width="2.4"/>
+<circle cx="32" cy="32" r="15" stroke="#FF7A00" stroke-width="1.2" stroke-opacity="0.45"/>
+<path d="M32 32 L32 5 A27 27 0 0 1 59 32 Z" fill="url(#bs-nav-sweep)"/>
+<line x1="32" y1="32" x2="32" y2="5" stroke="#FF7A00" stroke-width="2"/>
+<line x1="32" y1="32" x2="59" y2="32" stroke="#FF7A00" stroke-width="2" stroke-opacity="0.55"/>
+<circle cx="32" cy="32" r="3.6" fill="#FF7A00"/>
+</svg>
+ BharatSensing
+ </a>
+ <nav class="nav-menu" aria-label="Primary">
+ <a href="index.html">Home</a>
+ <a href="product.html">Product</a>
+
+ <div class="has-sub">
+ <a href="services.html" class="sub-trigger active">Services</a>
+ <button class="sub-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Open services menu"><svg class="chev" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5"/></svg></button>
+ <div class="sub-menu" role="menu">
+ <div class="sub-head">GIS services</div>
+ <a href="transmission.html" role="menuitem"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M6.5 22 12 4l5.5 18"/><path d="M8 13h8M9 9h6"/><path d="M2 7c3.4 2.6 6.6 2.6 10 0M22 7c-3.4 2.6-6.6 2.6-10 0"/></svg></span><span>Transmission Line<span class="desc">Thermal hotspot detection, sag and tension</span></span></a>
+ <a href="transit.html" role="menuitem"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21 9 3M20 21 15 3"/><path d="M3.6 7.5h16.8M4.9 12.6h14.2M6.2 17.7h11.6"/></svg></span><span>Transit Line<span class="desc">Corridor and track-side asset intelligence</span></span></a>
+ <a href="telecom.html" role="menuitem"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 22 12 7l3 15"/><path d="M9.8 18h4.4"/><path d="M8.6 5.4a5 5 0 0 1 6.8 0M6 3a9 9 0 0 1 12 0"/><circle cx="12" cy="7" r="1.1"/></svg></span><span>Telecom<span class="desc">Tower digital twins and rollout validation</span></span></a>
+ <a href="asset-monitoring.html" role="menuitem"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20.5h16"/><path d="M9.6 20.5v-4.4h4.8v4.4"/><path d="M6.6 12.4a7.5 7.5 0 0 1 10.8 0"/><path d="M3.4 7.9a12 12 0 0 1 17.2 0"/><circle cx="12" cy="4.1" r="1.25"/></svg></span><span>Asset Monitoring<span class="desc">Field, drone and satellite on one record</span></span></a>
+ <a href="encroachment.html" role="menuitem"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.2" y="4.2" width="17.6" height="15.6" rx="1.6"/><path d="M3.2 10.4h17.6M3.2 15.2h17.6M9.6 4.2v15.6M15.2 4.2v15.6"/><path d="M10.4 14.6v-2.4l1.8-1.3 1.8 1.3v2.4z" fill="currentColor" stroke="none"/></svg></span><span>Land Encroachment Detection<span class="desc">AI assessment at land-parcel level</span></span></a>
+ <div class="sub-sep"></div>
+ <a href="services.html" role="menuitem"><span>All GIS services<span class="desc">How the capability stack fits together</span></span></a>
+ </div>
+ </div>
+
+ <a href="about.html">About</a>
+ <a href="contact.html">Contact</a>
+ </nav>
+ <div class="nav-cta">
+ <a href="contact.html" class="btn btn-primary">Request a briefing</a>
+ <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+ <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+ </button>
+ </div>
+ </div>
+</header>
+
+<section class="page-hero">
+ <div class="hero-bg" aria-hidden="true"><div class="hero-grid"></div><div class="hero-glow"></div></div>
+ <div class="container">
+ <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span>
+ <a href="services.html">Services</a><span class="sep">/</span><span>Asset Monitoring</span></div>
+ <h1 class="display-lg">Know what was built,<br/>and what is standing<br/>there today.</h1>
+ <p class="lede">One register for every asset, with three independent layers of observation writing to the same record — so a progress figure can be opened down to the photograph, the coordinate and the person behind it.</p>
+ 
+ </div>
+</section>
+
+<section class="section-tight">
+ <div class="container">
+ <div class="usp reveal">
+ <div class="glow" aria-hidden="true"></div>
+ <div class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 3 7.5l9 4.5 9-4.5z"/><path d="m3 12.5 9 4.5 9-4.5"/><path d="m3 17 9 4.5 9-4.5"/></svg></div>
+ <div>
+ <span class="tag">The differentiator</span>
+ <h3>Evidence that can contradict the report</h3>
+ <p>A progress number travelling up a reporting chain has no way of being wrong in public. Attach a geo-tagged photograph, a timestamp and a named user to every status change, then put a drone pass and a satellite read beside it, and the number becomes checkable. Three independent layers disagree with each other when something is off — which is the entire point.</p>
+ </div>
+ </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="container">
+ <div class="svc-split reveal">
+ <div>
+ <h3 class="display-sm">The problem</h3>
+ <p class="mt-16" style="color:var(--fg-2)">Large build programmes run at a scale no inspection team can keep up with. Progress is reported upward through the same chain that is responsible for delivering it. By the time a figure reaches leadership it has passed through several hands, and there is no evidence attached to it that anyone can check.</p>
+ <p class="mt-16" style="color:var(--fg-2)">The question is not whether people are honest. It is that a number with no photograph, no coordinate and no timestamp behind it cannot be audited by anyone, and so cannot be acted on with confidence.</p>
+ </div>
+ <div>
+ <h3 class="display-sm">What we deliver</h3>
+ <ul class="cap-list mt-16" style="grid-template-columns:1fr">
+ <li>A single asset register reconciled against the authoritative source data, down to the reference code for every site</li>
+ <li>A field inspection application with enforced live capture, geo-fencing and OTP-only identity</li>
+ <li>Independent cross-validation between two separate field teams on every asset</li>
+ <li>Drone survey of a selected cohort, producing a measurable record independent of field reporting</li>
+ <li>Satellite assessment across the full portfolio, repeated as imagery refreshes</li>
+ <li>Dashboards scoped to each team&rsquo;s own area, with pendency that does not quietly disappear</li>
+ <li>Automated reminders and escalation on a registered-template messaging pipeline</li>
+ <li>Every report exportable at whatever level it is being viewed</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="container">
+ <div class="reveal"><svg viewBox="0 0 1200 430" aria-label="Three capture layers — satellite, drone and ground — writing to one asset record" style="width:100%;height:auto;border:1px solid #D8DEE6;border-radius:20px;background:#FFFFFF"><path d="M110 78 H1090" stroke="#D8DEE6" stroke-width="1"/><text x="110" y="66" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="11.5" font-weight="600" fill="#6B7684">SATELLITE</text><path d="M110 190 H1090" stroke="#D8DEE6" stroke-width="1"/><text x="110" y="178" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="11.5" font-weight="600" fill="#6B7684">DRONE / AERIAL</text><path d="M110 302 H1090" stroke="#D8DEE6" stroke-width="1"/><text x="110" y="290" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="11.5" font-weight="600" fill="#6B7684">ON GROUND</text><rect x="520" y="44" width="62" height="26" rx="6" fill="#12395B"/><path d="M506 57h14M582 57h14" stroke="#12395B" stroke-width="3"/><path d="M551 72 L470 186 M551 72 L632 186" stroke="#12395B" stroke-width="1.2" stroke-dasharray="4 5" opacity="0.6"/><rect x="528" y="160" width="46" height="18" rx="5" fill="#FF7A00"/><path d="M520 158h20M562 158h20" stroke="#FF7A00" stroke-width="2.6"/><path d="M551 180 L500 296 M551 180 L602 296" stroke="#FF7A00" stroke-width="1.2" stroke-dasharray="4 5" opacity="0.65"/><path d="M360 352 H742" stroke="#0A0F1C" stroke-width="2"/><rect x="498" y="312" width="106" height="40" rx="5" fill="#FFFFFF" stroke="#0A0F1C" stroke-width="1.6"/><path d="M498 312 551 288 604 312" fill="none" stroke="#0A0F1C" stroke-width="1.6"/><circle cx="420" cy="322" r="8" fill="none" stroke="#0E6B3A" stroke-width="1.8"/><path d="M420 330v14M412 352l8-8 8 8M410 336h20" stroke="#0E6B3A" stroke-width="1.8" fill="none"/><path d="M430 330 L492 330" stroke="#0E6B3A" stroke-width="1.6" stroke-dasharray="5 5" fill="none"/><circle cx="492" cy="330" r="3.4" fill="#0E6B3A"/><rect x="846" y="150" width="244" height="120" rx="14" fill="#FFFFFF" stroke="#0A0F1C"/><text x="968.0" y="215.4" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="500" fill="#0A0F1C"></text><text x="968" y="186" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="11.5" font-weight="600" fill="#6B7684">ONE ASSET RECORD</text><text x="968" y="216" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="600" fill="#0A0F1C">Same site. Same code.</text><text x="968" y="240" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="600" fill="#0A0F1C">Three independent reads.</text><path d="M700 57 C790 57 790 210 846 210" stroke="#D8DEE6" stroke-width="1.4" fill="none"/><path d="M700 169 C790 169 790 210 846 210" stroke="#D8DEE6" stroke-width="1.4" fill="none"/><path d="M700 332 C790 332 790 210 846 210" stroke="#D8DEE6" stroke-width="1.4" fill="none"/><text x="600" y="404" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="400" fill="#6B7684">Where the layers disagree, the disagreement is the finding.</text></svg></div>
+ <p class="mt-24 reveal" style="font-size:14.5px;color:var(--fg-muted);max-width:92ch">The drone and satellite layers are not reported by the people being measured. Where they disagree with the field record, the disagreement is the finding worth chasing.</p>
+ </div>
+</section>
+
+<section class="section section-cream">
+ <div class="container">
+ <div class="section-header reveal">
+ <span class="eyebrow">The layers</span>
+ <h2 class="display-lg">Three observations.<br/>One record.</h2>
+ <p class="lede">Each layer is cheaper and wider than the one before it, and less detailed. Together they cover the portfolio without anyone pretending a single method could.</p>
+ </div>
+ <div class="layer-stack reveal">
+ <article class="layer">
+ <span class="idx">LAYER 01</span>
+ <div>
+ <h4>On-ground staff</h4>
+ <p>Field teams capture what is actually standing, on a mobile app built for low connectivity and low
+ trust. Live-camera capture only, inside a geo-fence around the asset, every photograph geo-tagged and
+ tied to a named user who signed in by one-time password. Two independent teams inspect the same asset
+ and validate each other&rsquo;s evidence before a supervisor records a verdict.</p>
+ <div class="layer-meta"><span>OTP-only sign-in</span><span>Live capture, geo-fenced</span>
+ <span>Two-team cross-validation</span><span>Access scoped to own area</span></div>
+ </div>
+ </article>
+ <article class="layer">
+ <span class="idx">LAYER 02</span>
+ <div>
+ <h4>Drone-based monitoring</h4>
+ <p>Where ground photographs cannot show the whole asset, we fly it. Orthomosaic and elevation capture
+ gives a measurable record of the full site — area, boundary, surface condition and the position of
+ every built element — in a form that can be audited from a desk without visiting, and independent of
+ whatever the field reported.</p>
+ <div class="layer-meta"><span>Orthomosaic + elevation</span><span>Measurable area and boundary</span>
+ <span>Independent of field reporting</span><span>Repeatable per cycle</span></div>
+ </div>
+ </article>
+ <article class="layer">
+ <span class="idx">LAYER 03</span>
+ <div>
+ <h4>Satellite-based monitoring</h4>
+ <p>The widest and cheapest layer, and the only one that scales to every asset at once. High-resolution
+ imagery is read against the asset boundary to confirm existence, extent and change over time — without
+ anyone going anywhere. It covers the long tail that drones and field visits will never reach, and keeps
+ the register current as imagery refreshes.</p>
+ <div class="layer-meta"><span>Whole-portfolio coverage</span><span>Change detection over time</span>
+ <span>Refreshes with imagery</span><span>No field mobilisation</span></div>
+ </div>
+ </article>
+ </div>
+
+ </div>
+</section>
+
+
+
+<section class="section section-bone">
+ <div class="container">
+ <div class="section-header reveal">
+ <span class="eyebrow">Why it holds up</span>
+ <h2 class="display-lg">Built to be checked.</h2>
+ </div> <div class="grid grid-3 reveal">
+ <article class="card">
+ <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></div>
+ <h3>Evidence, not assertions</h3>
+ <p>Every status change carries a geo-tagged photograph, a timestamp and a named user. A figure on a dashboard can be opened down to the image behind it.</p>
+ </article>
+ <article class="card">
+ <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-9-9"/><path d="M21 3v6h-6"/></svg></div>
+ <h3>Accountability that resolves</h3>
+ <p>Pendency is attributed to a named owner and escalates upward on a schedule. Nothing sits unowned, and nothing resets itself quietly at the week&rsquo;s end.</p>
+ </article>
+ <article class="card">
+ <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6.6 9 4l6 2.6L21 4v13.4L15 20l-6-2.6L3 20z"/><path d="M9 4v13.4M15 6.6V20"/></svg></div>
+ <h3>Reconciled to the record</h3>
+ <p>The asset register is matched against the authoritative source data on reference codes and names, so findings land in the existing workflow rather than beside it.</p>
+ </article>
+ <article class="card">
+ <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
+ <h3>Capture that cannot be faked</h3>
+ <p>Gallery upload is disabled, capture is confined to a geo-fence around the asset, and identity is one-time-password only. There is no path for a photograph taken somewhere else, at another time, to enter the record.</p>
+ </article>
+ <article class="card">
+ <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 3 7.5l9 4.5 9-4.5z"/><path d="m3 12.5 9 4.5 9-4.5"/><path d="m3 17 9 4.5 9-4.5"/></svg></div>
+ <h3>Independent corroboration</h3>
+ <p>The drone and satellite layers are not reported by the people being measured. Where they disagree with the field record, the disagreement is the finding.</p>
+ </article>
+ <article class="card">
+ <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v6H4zM4 14h16v6H4z"/><path d="M8 7h.01M8 17h.01"/></svg></div>
+ <h3>Exports at every level</h3>
+ <p>District, block, site or single asset — whatever is on screen downloads in the same structure, so the figures in a review meeting and the figures in the system are the same figures.</p>
+ </article>
+ </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="container">
+ <div class="section-header reveal">
+ <span class="eyebrow">How it works</span>
+ <h2 class="display-lg">Reported, observed,<br/>reconciled.</h2>
+ </div> <div class="flow">
+ <div class="flow-head"><span>Stage</span><span>What happens</span><span>What it gives you</span></div>
+ <div class="flow-row reveal">
+ <div class="k">Register</div>
+ <div class="v">The asset list is reconciled against the authoritative source data on reference codes and names, resolving duplicates, merged records and spelling drift before anything is monitored.</div>
+ <div class="o">A register that matches the official record</div>
+ </div>
+ <div class="flow-row reveal">
+ <div class="k">Capture</div>
+ <div class="v">Field, drone and satellite layers each record the same asset independently, on their own cadence.</div>
+ <div class="o">Three accounts of the same thing</div>
+ </div>
+ <div class="flow-row reveal">
+ <div class="k">Reconcile</div>
+ <div class="v">Disagreement between layers is surfaced rather than averaged away, and routed for resolution.</div>
+ <div class="o">Contradictions become findings</div>
+ </div>
+ <div class="flow-row reveal">
+ <div class="k">Act</div>
+ <div class="v">Pendency is attributed to a named owner, escalates on a schedule, and is exportable at any level.</div>
+ <div class="o">Work is owned, not just logged</div>
+ </div>
+ </div>
+ </div>
+</section>
+
+<section class="section section-bone">
+ <div class="container">
+ <div class="section-header centered reveal">
+ <span class="eyebrow">More GIS services</span>
+ <h2 class="display-lg">The rest of the stack.</h2>
+ </div>
+ <div class="entry-grid reveal" style="grid-template-columns:repeat(4,1fr)">
+ <a href="transmission.html" class="entry-card">
+ <div class="entry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20"/><path d="M6.5 22 12 4l5.5 18"/><path d="M8 13h8M9 9h6"/><path d="M2 7c3.4 2.6 6.6 2.6 10 0M22 7c-3.4 2.6-6.6 2.6-10 0"/></svg></div>
+ <h3>Transmission Line</h3>
+ <p>Thermal hotspot detection, sag and tension</p>
+ <span class="go">Explore</span>
+ </a>
+ <a href="transit.html" class="entry-card">
+ <div class="entry-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21 9 3M20 21 15 3"/><path d="M3.6 7.5h16.8M4.9 12.6h14.2M6.2 17.7h11.6"/></svg></div>
+ <h3>Transit Line</h3>
+ <p>Corridor and track-side safety intelligence</p>
+ <span class="go">Explore</span>
+ </a>
+ <a href="telecom.html" class="entry-card">
+ <div class="entry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 22 12 7l3 15"/><path d="M9.8 18h4.4"/><path d="M8.6 5.4a5 5 0 0 1 6.8 0M6 3a9 9 0 0 1 12 0"/><circle cx="12" cy="7" r="1.1"/></svg></div>
+ <h3>Telecom</h3>
+ <p>Tower digital twins and rollout validation</p>
+ <span class="go">Explore</span>
+ </a>
+ <a href="encroachment.html" class="entry-card">
+ <div class="entry-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.2" y="4.2" width="17.6" height="15.6" rx="1.6"/><path d="M3.2 10.4h17.6M3.2 15.2h17.6M9.6 4.2v15.6M15.2 4.2v15.6"/><path d="M10.4 14.6v-2.4l1.8-1.3 1.8 1.3v2.4z" fill="currentColor" stroke="none"/></svg></div>
+ <h3>Land Encroachment Detection</h3>
+ <p>AI assessment at land-parcel level</p>
+ <span class="go">Explore</span>
+ </a>
+ </div>
+ </div>
+</section>
+<section class="section-tight">
+ <div class="container">
+ <div class="cta-band reveal">
+ <div class="glow" aria-hidden="true"></div>
+ <div class="row">
+ <div>
+ <span class="eyebrow">Ready when you are</span>
+ <h2 class="display-md mt-24">Put an auditable register<br/>under your programme.</h2>
+ </div>
+ <div class="actions"><a href="contact.html" class="btn btn-primary">Request a briefing</a></div>
+ </div>
+ </div>
+ </div>
+</section>
+<div class="tricolor"><span></span><span></span><span></span></div>
+<footer>
+ <div class="container">
+ <div class="footer-grid">
+ <div class="footer-brand">
+ <h3>BharatSensing</h3>
+ <p>India's first indigenous ground radar manufacturer. Radar, drones and satellites for the country's critical assets.</p>
+ <p class="mono small mt-24" style="color:var(--fg-on-dark-muted)">info@bharatsensing.com</p>
+ </div>
+ <div class="footer-col">
+ <h5>Product</h5>
+ <a href="product.html">SuryaGbSAR</a>
+ <a href="mining.html">Mining</a>
+ <a href="dams.html">Dams &amp; Reservoirs</a>
+ <a href="bridges.html">Bridges &amp; Highways</a>
+ </div>
+ <div class="footer-col">
+ <h5>Services</h5>
+ <a href="transmission.html">Transmission Line</a>
+ <a href="transit.html">Transit Line</a>
+ <a href="telecom.html">Telecom</a>
+ <a href="asset-monitoring.html">Asset Monitoring</a>
+ <a href="encroachment.html">Land Encroachment Detection</a>
+ </div>
+ <div class="footer-col">
+ <h5>Company</h5>
+ <a href="about.html">About</a>
+ <a href="contact.html">Contact</a>
+ </div>
+ </div>
+ <div class="footer-bottom">
+ <span>&copy; <span id="year">2026</span> BharatSensing Technologies Pvt. Ltd.</span>
+ <span class="mono">Building India's Eyes &middot; Protecting India's Future</span>
+ </div>
+ </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

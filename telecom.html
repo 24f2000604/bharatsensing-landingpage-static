@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Telecom Tower Digital Twin and Rollout Intelligence | BharatSensing</title>
+<meta name="description" content="A continuously refreshed digital twin of every tower site — validate upgrades remotely, check clearances and line of sight, and rank structural and compliance risk." />
+<link rel="canonical" href="https://bharatsensing.com/telecom.html" />
+<meta name="theme-color" content="#0A0F1C" />
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1" />
+
+<!-- Favicons: real crawlable files. A data: URI favicon is never indexed by search engines. -->
+<link rel="icon" href="favicon.ico" sizes="any" />
+<link rel="icon" type="image/svg+xml" href="assets/icon.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icon-32.png" />
+<link rel="icon" type="image/png" sizes="48x48" href="assets/icon-48.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+<link rel="manifest" href="site.webmanifest" />
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="BharatSensing" />
+<meta property="og:title" content="Telecom Tower Digital Twin and Rollout Intelligence | BharatSensing" />
+<meta property="og:description" content="A continuously refreshed digital twin of every tower site — validate upgrades remotely, check clearances and line of sight, and rank structural and compliance risk." />
+<meta property="og:url" content="https://bharatsensing.com/telecom.html" />
+<meta property="og:image" content="https://bharatsensing.com/assets/og-cover.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="en_IN" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Telecom Tower Digital Twin and Rollout Intelligence | BharatSensing" />
+<meta name="twitter:description" content="A continuously refreshed digital twin of every tower site — validate upgrades remotely, check clearances and line of sight, and rank structural and compliance risk." />
+<meta name="twitter:image" content="https://bharatsensing.com/assets/og-cover.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Organization",
+ "@id": "https://bharatsensing.com/#organization",
+ "name": "BharatSensing",
+ "legalName": "BharatSensing Technologies Pvt. Ltd.",
+ "url": "https://bharatsensing.com/",
+ "logo": {
+  "@type": "ImageObject",
+  "url": "https://bharatsensing.com/assets/logo-512.png",
+  "width": 512,
+  "height": 512
+ },
+ "image": "https://bharatsensing.com/assets/og-cover.png",
+ "description": "BharatSensing builds India's first indigenous ground-based synthetic aperture radar and delivers drone and satellite monitoring services for critical infrastructure and public assets.",
+ "email": "info@bharatsensing.com",
+ "foundingDate": "2024",
+ "address": {
+  "@type": "PostalAddress",
+  "addressCountry": "IN"
+ },
+ "areaServed": {
+  "@type": "Country",
+  "name": "India"
+ },
+ "knowsAbout": [
+  "Ground-based synthetic aperture radar",
+  "Slope stability monitoring",
+  "Structural health monitoring",
+  "Drone survey",
+  "Satellite imagery analysis",
+  "Geospatial AI"
+ ],
+ "sameAs": [
+  "https://www.linkedin.com/company/bharatsensing"
+ ]
+}
+</script>
+</head>
+<body>
+
+<header class="nav nav-dark">
+ <div class="nav-inner">
+ <a class="nav-logo" href="index.html" aria-label="BharatSensing home">
+ <svg class="chakra" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+<defs><linearGradient id="bs-nav-sweep" x1="50%" y1="0%" x2="100%" y2="50%"><stop offset="0%" stop-color="#FF7A00" stop-opacity="0"/><stop offset="100%" stop-color="#FF7A00" stop-opacity="0.65"/></linearGradient></defs>
+<circle cx="32" cy="32" r="27" stroke="#FF7A00" stroke-width="2.4"/>
+<circle cx="32" cy="32" r="15" stroke="#FF7A00" stroke-width="1.2" stroke-opacity="0.45"/>
+<path d="M32 32 L32 5 A27 27 0 0 1 59 32 Z" fill="url(#bs-nav-sweep)"/>
+<line x1="32" y1="32" x2="32" y2="5" stroke="#FF7A00" stroke-width="2"/>
+<line x1="32" y1="32" x2="59" y2="32" stroke="#FF7A00" stroke-width="2" stroke-opacity="0.55"/>
+<circle cx="32" cy="32" r="3.6" fill="#FF7A00"/>
+</svg>
+ BharatSensing
+ </a>
+ <nav class="nav-menu" aria-label="Primary">
+ <a href="index.html">Home</a>
+ <a href="product.html">Product</a>
+
+ <div class="has-sub">
+ <a href="services.html" class="sub-trigger active">Services</a>
+ <button class="sub-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Open services menu"><svg class="chev" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5"/></svg></button>
+ <div class="sub-menu" role="menu">
+ <div class="sub-head">GIS services</div>
+ <a href="transmission.html" role="menuitem"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M6.5 22 12 4l5.5 18"/><path d="M8 13h8M9 9h6"/><path d="M2 7c3.4 2.6 6.6 2.6 10 0M22 7c-3.4 2.6-6.6 2.6-10 0"/></svg></span><span>Transmission Line<span class="desc">Thermal hotspot detection, sag and tension</span></span></a>
+ <a href="transit.html" role="menuitem"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21 9 3M20 21 15 3"/><path d="M3.6 7.5h16.8M4.9 12.6h14.2M6.2 17.7h11.6"/></svg></span><span>Transit Line<span class="desc">Corridor and track-side asset intelligence</span></span></a>
+ <a href="telecom.html" role="menuitem"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 22 12 7l3 15"/><path d="M9.8 18h4.4"/><path d="M8.6 5.4a5 5 0 0 1 6.8 0M6 3a9 9 0 0 1 12 0"/><circle cx="12" cy="7" r="1.1"/></svg></span><span>Telecom<span class="desc">Tower digital twins and rollout validation</span></span></a>
+ <a href="asset-monitoring.html" role="menuitem"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20.5h16"/><path d="M9.6 20.5v-4.4h4.8v4.4"/><path d="M6.6 12.4a7.5 7.5 0 0 1 10.8 0"/><path d="M3.4 7.9a12 12 0 0 1 17.2 0"/><circle cx="12" cy="4.1" r="1.25"/></svg></span><span>Asset Monitoring<span class="desc">Field, drone and satellite on one record</span></span></a>
+ <a href="encroachment.html" role="menuitem"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.2" y="4.2" width="17.6" height="15.6" rx="1.6"/><path d="M3.2 10.4h17.6M3.2 15.2h17.6M9.6 4.2v15.6M15.2 4.2v15.6"/><path d="M10.4 14.6v-2.4l1.8-1.3 1.8 1.3v2.4z" fill="currentColor" stroke="none"/></svg></span><span>Land Encroachment Detection<span class="desc">AI assessment at land-parcel level</span></span></a>
+ <div class="sub-sep"></div>
+ <a href="services.html" role="menuitem"><span>All GIS services<span class="desc">How the capability stack fits together</span></span></a>
+ </div>
+ </div>
+
+ <a href="about.html">About</a>
+ <a href="contact.html">Contact</a>
+ </nav>
+ <div class="nav-cta">
+ <a href="contact.html" class="btn btn-primary">Request a briefing</a>
+ <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+ <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+ </button>
+ </div>
+ </div>
+</header>
+
+<section class="page-hero">
+ <div class="hero-bg" aria-hidden="true"><div class="hero-grid"></div><div class="hero-glow"></div></div>
+ <div class="container">
+ <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span>
+ <a href="services.html">Services</a><span class="sep">/</span><span>Telecom</span></div>
+ <h1 class="display-lg">Telecom plans need a<br/>living view of physical<br/>reality.</h1>
+ <p class="lede">A continuously refreshed digital twin of every tower site, built from LiDAR, drone and satellite capture. Validate upgrades, check clearances and line of sight, and rank structural risk — without sending anyone to the tower to find out.</p>
+ 
+ </div>
+</section>
+
+<section class="section-tight">
+ <div class="container">
+ <div class="usp reveal">
+ <div class="glow" aria-hidden="true"></div>
+ <div class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 22 12 7l3 15"/><path d="M9.8 18h4.4"/><path d="M8.6 5.4a5 5 0 0 1 6.8 0M6 3a9 9 0 0 1 12 0"/><circle cx="12" cy="7" r="1.1"/></svg></div>
+ <div>
+ <span class="tag">The differentiator</span>
+ <h3>Remote validation against a live twin</h3>
+ <p>Most site visits exist to answer a question an accurate twin could have answered from a desk: will this antenna fit, is there clearance, what is actually mounted up there, is the structure sound enough to carry more. A twin that refreshes rather than ages turns a periodic survey into an operating workflow, and turns a truck roll into a query.</p>
+ </div>
+ </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="container">
+ <div class="svc-split reveal">
+ <div>
+ <h3 class="display-sm">The problem</h3>
+ <p class="mt-16" style="color:var(--fg-2)">Fragmented site data leaves operators without a trusted view of the network. There is no unified physical picture across thousands of sites, mounted equipment and structural safety are uncertain until someone climbs, and RF plans are drawn against assumptions rather than against real obstructions.</p>
+ <p class="mt-16" style="color:var(--fg-2)">The consequences are concrete. Upgrade planning relies on records that do not reflect the as-built site. Validation requires repeat visits. Asset records drift tower by tower, and nobody can say how far.</p>
+ </div>
+ <div>
+ <h3 class="display-sm">What the twin answers</h3>
+ <ul class="cap-list mt-16" style="grid-template-columns:1fr">
+ <li>The current physical configuration of each tower and site — structural elements, mounted equipment, antenna orientation, clearances and obstructions</li>
+ <li>Whether a planned upgrade actually fits, before anyone is dispatched</li>
+ <li>How real-world obstructions compare with the theoretical RF plan in dense environments</li>
+ <li>Where corrosion, tilt, deformation or unauthorized equipment have appeared against the baseline scan</li>
+ <li>Which sites breach zoning rules, height restrictions or municipal constraints</li>
+ <li>Which interventions matter most, ranked by safety and regulatory exposure</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="container">
+ <div class="reveal"><svg viewBox="0 0 1200 430" aria-label="Capture positions around a tower building a digital twin that answers planning questions remotely" style="width:100%;height:auto;border:1px solid #D8DEE6;border-radius:20px;background:#FFFFFF"><path d="M120 356 H480" stroke="#D8DEE6" stroke-width="1.4"/><path d="M300 96 V356" stroke="#0A0F1C" stroke-width="2.2"/><path d="M254 356 L300 112 L346 356" fill="none" stroke="#0A0F1C" stroke-width="1.8"/><path d="M270 170 H330" stroke="#0A0F1C" stroke-width="1.3"/><path d="M270 232 H330" stroke="#0A0F1C" stroke-width="1.3"/><path d="M270 294 H330" stroke="#0A0F1C" stroke-width="1.3"/><rect x="253" y="150" width="14" height="30" rx="3" fill="#12395B"/><rect x="333" y="150" width="14" height="30" rx="3" fill="#12395B"/><rect x="259" y="196" width="14" height="30" rx="3" fill="#12395B"/><rect x="327" y="196" width="14" height="30" rx="3" fill="#12395B"/><circle cx="448" cy="220" r="5" fill="#FF7A00" opacity="0.85"/><circle cx="428" cy="258" r="5" fill="#FF7A00" opacity="0.85"/><circle cx="374" cy="287" r="5" fill="#FF7A00" opacity="0.85"/><circle cx="300" cy="297" r="5" fill="#FF7A00" opacity="0.85"/><circle cx="226" cy="287" r="5" fill="#FF7A00" opacity="0.85"/><circle cx="172" cy="258" r="5" fill="#FF7A00" opacity="0.85"/><circle cx="152" cy="220" r="5" fill="#FF7A00" opacity="0.85"/><circle cx="172" cy="182" r="5" fill="#FF7A00" opacity="0.85"/><circle cx="226" cy="153" r="5" fill="#FF7A00" opacity="0.85"/><circle cx="300" cy="143" r="5" fill="#FF7A00" opacity="0.85"/><circle cx="374" cy="153" r="5" fill="#FF7A00" opacity="0.85"/><circle cx="428" cy="182" r="5" fill="#FF7A00" opacity="0.85"/><ellipse cx="300" cy="220" rx="148" ry="77" fill="none" stroke="#FF7A00" stroke-width="1.2" stroke-dasharray="5 6" opacity="0.6"/><text x="300" y="400" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="400" fill="#6B7684">LiDAR · thermal · RGB capture positions</text><path d="M470 220 H560" stroke="#FF7A00" stroke-width="1.6" stroke-dasharray="5 5"/><path d="M552 213 l10 7 -10 7" fill="none" stroke="#FF7A00" stroke-width="1.8"/><rect x="576" y="150" width="190" height="140" rx="14" fill="#0A0F1C"/><text x="671" y="182" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="11.5" font-weight="700" fill="#FFD9B3">DIGITAL TWIN</text><text x="671" y="212" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="400" fill="#FFFFFF">Structure</text><text x="671" y="238" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="400" fill="#FFFFFF">Mounted equipment</text><text x="671" y="264" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="400" fill="#FFFFFF">Clearances</text><path d="M766 220 C826 220 826 126 866 126" stroke="#D8DEE6" stroke-width="1.4" fill="none"/><rect x="866" y="108" width="268" height="42" rx="10" fill="#FFFFFF" stroke="#D8DEE6"/><text x="1000.0" y="134.22" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14.5" font-weight="500" fill="#0A0F1C">Will the upgrade fit?</text><circle cx="896" cy="129" r="9" fill="#0E6B3A" opacity="0.14"/><path d="M891 129 l4 4 7-8" stroke="#0E6B3A" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M766 220 C826 220 826 188 866 188" stroke="#D8DEE6" stroke-width="1.4" fill="none"/><rect x="866" y="170" width="268" height="42" rx="10" fill="#FFFFFF" stroke="#D8DEE6"/><text x="1000.0" y="196.22" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14.5" font-weight="500" fill="#0A0F1C">Is there line of sight?</text><circle cx="896" cy="191" r="9" fill="#0E6B3A" opacity="0.14"/><path d="M891 191 l4 4 7-8" stroke="#0E6B3A" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M766 220 C826 220 826 250 866 250" stroke="#D8DEE6" stroke-width="1.4" fill="none"/><rect x="866" y="232" width="268" height="42" rx="10" fill="#FFFFFF" stroke="#D8DEE6"/><text x="1000.0" y="258.22" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14.5" font-weight="500" fill="#0A0F1C">Is the structure sound?</text><circle cx="896" cy="253" r="9" fill="#0E6B3A" opacity="0.14"/><path d="M891 253 l4 4 7-8" stroke="#0E6B3A" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M766 220 C826 220 826 312 866 312" stroke="#D8DEE6" stroke-width="1.4" fill="none"/><rect x="866" y="294" width="268" height="42" rx="10" fill="#FFFFFF" stroke="#D8DEE6"/><text x="1000.0" y="320.22" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14.5" font-weight="500" fill="#0A0F1C">Does zoning allow it?</text><circle cx="896" cy="315" r="9" fill="#0E6B3A" opacity="0.14"/><path d="M891 315 l4 4 7-8" stroke="#0E6B3A" stroke-width="2" fill="none" stroke-linecap="round"/><text x="1000" y="400" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="400" fill="#6B7684">Answered from a desk, not a truck roll.</text></svg></div>
+ <p class="mt-24 reveal" style="font-size:14.5px;color:var(--fg-muted);max-width:92ch">Capture positions are planned so the structure is covered from every angle needed for mesh generation. The twin that comes out answers the questions that otherwise send a crew to the tower.</p>
+ </div>
+</section>
+
+<section class="section section-cream">
+ <div class="container">
+ <div class="section-header reveal">
+ <span class="eyebrow">The shift</span>
+ <h2 class="display-lg">From periodic survey to<br/>an operating workflow.</h2>
+ </div> <div class="flow">
+ <div class="flow-head"><span>Dimension</span><span>Periodic survey</span><span>A live network twin</span></div>
+ <div class="flow-row reveal">
+ <div class="k">Data</div>
+ <div class="v">A site snapshot, taken on a schedule and out of date the week after.</div>
+ <div class="o">LiDAR, thermal, optical and enterprise data ingested together</div>
+ </div>
+ <div class="flow-row reveal">
+ <div class="k">Assessment</div>
+ <div class="v">A static report, read once and filed.</div>
+ <div class="o">Assets classified; structural, clearance and coverage issues detected</div>
+ </div>
+ <div class="flow-row reveal">
+ <div class="k">Action</div>
+ <div class="v">Findings filed for review, actioned if someone chases.</div>
+ <div class="o">Prioritized by risk and routed into existing systems</div>
+ </div>
+ <div class="flow-row reveal">
+ <div class="k">Refresh</div>
+ <div class="v">Records age quietly between surveys.</div>
+ <div class="o">Outcomes learned from, and the physical twin refreshed</div>
+ </div>
+ </div>
+ </div>
+</section>
+
+
+
+<section class="section section-bone">
+ <div class="container">
+ <div class="section-header reveal">
+ <span class="eyebrow">Use cases</span>
+ <h2 class="display-lg">Planning through<br/>maintenance.</h2>
+ <p class="lede">Six use cases on one twin. The first three decide what to build; the last three keep it standing.</p>
+ </div> <div class="grid grid-3 reveal">
+ <article class="card">
+ <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 22 12 7l3 15"/><path d="M9.8 18h4.4"/><path d="M8.6 5.4a5 5 0 0 1 6.8 0M6 3a9 9 0 0 1 12 0"/><circle cx="12" cy="7" r="1.1"/></svg></div>
+ <h3>Tower digital twin</h3>
+ <p>Structural elements, mounted equipment, antenna orientation, clearances and obstructions — establishing the current physical configuration of each tower and site.</p>
+ </article>
+ <article class="card">
+ <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 3 7.5l9 4.5 9-4.5z"/><path d="m3 12.5 9 4.5 9-4.5"/><path d="m3 17 9 4.5 9-4.5"/></svg></div>
+ <h3>Rollout and upgrade planning</h3>
+ <p>Antenna placement, line of sight, height and clearance constraints simulated and validated remotely before deployment is scheduled.</p>
+ </article>
+ <article class="card">
+ <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6.6 9 4l6 2.6L21 4v13.4L15 20l-6-2.6L3 20z"/><path d="M9 4v13.4M15 6.6V20"/></svg></div>
+ <h3>Coverage and line-of-sight validation</h3>
+ <p>Real-world constraints compared against theoretical RF plans, so design intent is checked against physical reality in dense environments.</p>
+ </article>
+ <article class="card">
+ <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
+ <h3>Structural health and compliance</h3>
+ <p>Corrosion, tilt, deformation and unauthorized equipment detected against baseline scans, with interventions ranked by safety and regulatory exposure.</p>
+ </article>
+ <article class="card">
+ <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></div>
+ <h3>Zoning and permit intelligence</h3>
+ <p>Zoning rules, height restrictions and municipal constraints overlaid on the twin, flagging violations early enough to support approvals.</p>
+ </article>
+ <article class="card">
+ <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-9-9"/><path d="M21 3v6h-6"/></svg></div>
+ <h3>Automated operations and maintenance</h3>
+ <p>Detected issues translated into prioritized work orders in ERP and CMMS, so dispatch follows condition rather than the calendar.</p>
+ </article>
+ </div>
+ </div>
+</section>
+
+<section class="section section-dark">
+ <div class="container">
+ <div class="section-header reveal">
+ <span class="eyebrow">Adaptability</span>
+ <h2 class="display-lg">Built for the sites<br/>you actually have.</h2>
+ </div> <div class="grid grid-3 reveal">
+ <article class="card card-dark">
+ <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 3 7.5l9 4.5 9-4.5z"/><path d="m3 12.5 9 4.5 9-4.5"/><path d="m3 17 9 4.5 9-4.5"/></svg></div>
+ <h3>Multi-format ingestion</h3>
+ <p>From RGB and thermal imagery to mesh and tilt models, mixed inputs are ingested and aligned into unified digital records.</p>
+ </article>
+ <article class="card card-dark">
+ <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6.6 9 4l6 2.6L21 4v13.4L15 20l-6-2.6L3 20z"/><path d="M9 4v13.4M15 6.6V20"/></svg></div>
+ <h3>With or without ground truthing</h3>
+ <p>Field-scanned or drone-based, varied coverage models are handled rather than refused — no analysis blind spots where capture was partial.</p>
+ </article>
+ <article class="card card-dark">
+ <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v6H4zM4 14h16v6H4z"/><path d="M8 7h.01M8 17h.01"/></svg></div>
+ <h3>Legacy ERP, CMMS and compliance stacks</h3>
+ <p>Integrates with existing asset systems to orchestrate actions, rather than replacing the technology base already in place.</p>
+ </article>
+ </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="container">
+ <div class="section-header reveal">
+ <span class="eyebrow">How it works</span>
+ <h2 class="display-lg">One pipeline, two audiences.</h2>
+ <p class="lede">The same data foundation supports engineering planning and day-to-day operations — which is what stops the two from working off different versions of the site.</p>
+ </div> <div class="pipeline reveal">
+ <div class="pipe-col">
+ <h4>Inputs</h4>
+ <ul>
+ <li>Optical imagery</li>
+ <li>Thermal capture</li>
+ <li>LiDAR point cloud</li>
+ <li>Drone survey</li>
+ <li>Satellite imagery</li>
+ <li>ERP and CMMS records</li>
+ </ul>
+ </div>
+ <div class="arrow-col">&rarr;</div>
+ <div class="pipe-col pipe-engine">
+ <h4>BharatSensing AI layer</h4>
+ <ul>
+ <li>Classify assets</li>
+ <li>Detect anomalies</li>
+ <li>Score risk</li>
+ <li>Maintain the digital twin</li>
+ <li>Learn from outcomes</li>
+ </ul>
+ </div>
+ <div class="arrow-col">&rarr;</div>
+ <div class="pipe-col">
+ <h4>Outputs</h4>
+ <ul>
+ <li>Engineering-ready 3D twins</li>
+ <li>Prioritized work orders</li>
+ <li>Risk-ranked interventions</li>
+ <li>Coverage and clearance validation</li>
+ <li>Compliance and audit trails</li>
+ </ul>
+ </div>
+ </div>
+ <p class="mt-32 reveal" style="font-size:15px;color:var(--fg-muted)">Existing enterprise and network systems — SAP, Oracle, Maximo, CMMS, GIS — remain the execution layer.</p>
+ </div>
+</section>
+
+<section class="section section-bone">
+ <div class="container">
+ <div class="section-header centered reveal">
+ <span class="eyebrow">More GIS services</span>
+ <h2 class="display-lg">The rest of the stack.</h2>
+ </div>
+ <div class="entry-grid reveal" style="grid-template-columns:repeat(4,1fr)">
+ <a href="transmission.html" class="entry-card">
+ <div class="entry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20"/><path d="M6.5 22 12 4l5.5 18"/><path d="M8 13h8M9 9h6"/><path d="M2 7c3.4 2.6 6.6 2.6 10 0M22 7c-3.4 2.6-6.6 2.6-10 0"/></svg></div>
+ <h3>Transmission Line</h3>
+ <p>Thermal hotspot detection, sag and tension</p>
+ <span class="go">Explore</span>
+ </a>
+ <a href="transit.html" class="entry-card">
+ <div class="entry-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21 9 3M20 21 15 3"/><path d="M3.6 7.5h16.8M4.9 12.6h14.2M6.2 17.7h11.6"/></svg></div>
+ <h3>Transit Line</h3>
+ <p>Corridor and track-side safety intelligence</p>
+ <span class="go">Explore</span>
+ </a>
+ <a href="asset-monitoring.html" class="entry-card">
+ <div class="entry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20.5h16"/><path d="M9.6 20.5v-4.4h4.8v4.4"/><path d="M6.6 12.4a7.5 7.5 0 0 1 10.8 0"/><path d="M3.4 7.9a12 12 0 0 1 17.2 0"/><circle cx="12" cy="4.1" r="1.25"/></svg></div>
+ <h3>Asset Monitoring</h3>
+ <p>Field, drone and satellite on one record</p>
+ <span class="go">Explore</span>
+ </a>
+ <a href="encroachment.html" class="entry-card">
+ <div class="entry-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.2" y="4.2" width="17.6" height="15.6" rx="1.6"/><path d="M3.2 10.4h17.6M3.2 15.2h17.6M9.6 4.2v15.6M15.2 4.2v15.6"/><path d="M10.4 14.6v-2.4l1.8-1.3 1.8 1.3v2.4z" fill="currentColor" stroke="none"/></svg></div>
+ <h3>Land Encroachment Detection</h3>
+ <p>AI assessment at land-parcel level</p>
+ <span class="go">Explore</span>
+ </a>
+ </div>
+ </div>
+</section>
+<section class="section-tight">
+ <div class="container">
+ <div class="cta-band reveal">
+ <div class="glow" aria-hidden="true"></div>
+ <div class="row">
+ <div>
+ <span class="eyebrow">Ready when you are</span>
+ <h2 class="display-md mt-24">Walk us through<br/>your tower portfolio.</h2>
+ </div>
+ <div class="actions"><a href="contact.html" class="btn btn-primary">Request a briefing</a></div>
+ </div>
+ </div>
+ </div>
+</section>
+<div class="tricolor"><span></span><span></span><span></span></div>
+<footer>
+ <div class="container">
+ <div class="footer-grid">
+ <div class="footer-brand">
+ <h3>BharatSensing</h3>
+ <p>India's first indigenous ground radar manufacturer. Radar, drones and satellites for the country's critical assets.</p>
+ <p class="mono small mt-24" style="color:var(--fg-on-dark-muted)">info@bharatsensing.com</p>
+ </div>
+ <div class="footer-col">
+ <h5>Product</h5>
+ <a href="product.html">SuryaGbSAR</a>
+ <a href="mining.html">Mining</a>
+ <a href="dams.html">Dams &amp; Reservoirs</a>
+ <a href="bridges.html">Bridges &amp; Highways</a>
+ </div>
+ <div class="footer-col">
+ <h5>Services</h5>
+ <a href="transmission.html">Transmission Line</a>
+ <a href="transit.html">Transit Line</a>
+ <a href="telecom.html">Telecom</a>
+ <a href="asset-monitoring.html">Asset Monitoring</a>
+ <a href="encroachment.html">Land Encroachment Detection</a>
+ </div>
+ <div class="footer-col">
+ <h5>Company</h5>
+ <a href="about.html">About</a>
+ <a href="contact.html">Contact</a>
+ </div>
+ </div>
+ <div class="footer-bottom">
+ <span>&copy; <span id="year">2026</span> BharatSensing Technologies Pvt. Ltd.</span>
+ <span class="mono">Building India's Eyes &middot; Protecting India's Future</span>
+ </div>
+ </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -19,8 +19,40 @@
   const toggle = document.querySelector('.nav-toggle');
   const menu = document.querySelector('.nav-menu');
   if (toggle && menu) {
-    toggle.addEventListener('click', () => menu.classList.toggle('open'));
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+      if (!open) closeSubs();
+    });
   }
+
+  // Services dropdown — CSS opens it on hover; click and keyboard work everywhere.
+  const subs = Array.prototype.slice.call(document.querySelectorAll('.nav-menu .has-sub'));
+  function closeSubs(except) {
+    subs.forEach((s) => {
+      if (s === except) return;
+      s.classList.remove('open');
+      const b = s.querySelector('.sub-trigger');
+      if (b) b.setAttribute('aria-expanded', 'false');
+    });
+  }
+  subs.forEach((sub) => {
+    const btn = sub.querySelector('.sub-toggle');
+    if (!btn) return;
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const open = !sub.classList.contains('open');
+      closeSubs(sub);
+      sub.classList.toggle('open', open);
+      btn.setAttribute('aria-expanded', String(open));
+    });
+    sub.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') { closeSubs(); btn.focus(); }
+    });
+  });
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.has-sub')) closeSubs();
+  });
 
   // Scroll reveal
   const els = document.querySelectorAll('.reveal');
